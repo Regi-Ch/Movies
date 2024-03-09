@@ -15,12 +15,12 @@ const FormSearch = () => {
 
     return (
         <div className="form-search">
-            <h2>Biblioteca de Películas</h2>
+            <h2>Movie Library</h2>
             <form onSubmit={ handleSubmit }>
-                <input type="text" placeholder="Nombre de la película" onChange={t => setTitle(t.target.value)}/>
-                <input type="submit" value="Buscar"/>
+                <input type="text" placeholder="Movie Name" onChange={t => setTitle(t.target.value)}/>
+                <input type="submit" value="Search"/>
             </form>
-            { error && <p className="error">La película no existe</p>}
+            { error && <p className="error">The movie does not exist</p>}
         </div>
     );
 }
